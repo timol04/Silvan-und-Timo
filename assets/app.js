@@ -21,9 +21,9 @@
     const tick = () => {
       const d = new Date(), h = d.getHours() + d.getMinutes() / 60;
       clock.textContent = `${pad(d.getHours())}:${pad(d.getMinutes())}`;
-      const lunch = h >= 11 && h < 14, dinner = h >= 17.5 && h < 23;
-      text.textContent = lunch ? 'Mittagsservice' : dinner ? 'Abendservice' : 'Pass ruhig';
-      dot.classList.toggle('rest', !(lunch || dinner));
+      const open = d.getDay() >= 1 && d.getDay() <= 5 && h >= 8 && h < 18;
+      text.textContent = open ? 'Erreichbar' : 'Ausser Haus';
+      dot.classList.toggle('rest', !open);
     };
     tick(); setInterval(tick, 20000);
   })();
@@ -272,7 +272,7 @@
   $('#contactForm').addEventListener('submit', e => {
     e.preventDefault();
     const f = new FormData(e.target);
-    const body = `Betrieb: ${f.get('betrieb')}\nName: ${f.get('name')}\n\nWas nervt im Alltag am meisten?\n${f.get('problem') || '(noch offen)'}\n`;
+    const body = `Firma: ${f.get('betrieb')}\nName: ${f.get('name')}\n\nWas würden Sie gerne einfacher haben?\n${f.get('problem') || '(noch offen)'}\n`;
     location.href = `mailto:kontakt@example.ch?subject=${encodeURIComponent('Anfrage von ' + f.get('betrieb'))}&body=${encodeURIComponent(body)}`;
   });
 })();

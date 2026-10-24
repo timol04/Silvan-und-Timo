@@ -1,6 +1,6 @@
 # Silvan & Timo
 
-Website von Silvan & Timo: Web-Apps für den Service in Gastronomiebetrieben in der Schweiz.
+Website von Silvan & Timo: Web-Apps, die einzelne Teile im Arbeitsalltag kleiner Firmen digitalisieren (mehr Struktur, weniger Aufwand). Start in der Gastronomie.
 
 Die Seite stellt das Startup vor (Über uns, Haltung, Ablauf, Modell, Kontakt) und zeigt drei kleine, funktionierende Beispiel-Tools. Der Look ist bewusst ruhig und schlicht: helles Papier, schwarze Schrift, feine Linien, grosse Typografie, keine Verläufe und keine Effekte.
 
