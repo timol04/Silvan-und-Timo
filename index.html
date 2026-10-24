@@ -3,71 +3,217 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Silvan &amp; Timo – Digitale Tools für die Gastronomie</title>
-  <meta name="description" content="Wir schauen uns den Alltag in Ihrem Betrieb an und bauen eine Web-App, die ihn einfacher macht. Einmal kaufen, Lizenz inklusive.">
+  <title>Silvan &amp; Timo – Tools für den Service</title>
+  <meta name="description" content="Wir schauen Ihrem Betrieb beim Arbeiten zu und bauen die Web-App, die den Ablauf einfacher macht. Einmal kaufen, selbst betreiben.">
+  <meta name="theme-color" content="#16181a">
+  <link rel="preload" href="assets/fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="logo" href="#top">Silvan &amp; Timo</a>
-    <nav>
-      <a href="#loesung">Lösung</a>
-      <a href="#ablauf">Ablauf</a>
-      <a href="#modell">Modell</a>
-      <a class="btn btn-small" href="#kontakt">Kontakt</a>
-    </nav>
-  </header>
 
-  <main id="top">
-    <section class="hero">
-      <p class="eyebrow">Für Restaurants, Cafés und Bars in der Schweiz</p>
-      <h1>Weniger Zettelwirtschaft. Mehr Zeit für Ihre Gäste.</h1>
-      <p class="lead">Wir schauen uns an, wie in Ihrem Betrieb gearbeitet wird, und bauen eine Web-App, die genau diesen Ablauf einfacher macht.</p>
-      <a class="btn" href="#kontakt">Gespräch vereinbaren</a>
-    </section>
+<header class="top">
+  <a class="mark" href="#top" aria-label="Silvan &amp; Timo, Startseite">Silvan<span>&amp;</span>Timo</a>
+  <p class="status" aria-live="off"><span class="dot" id="statusDot"></span><span id="statusText">Pass offen</span> <time id="clock">--:--</time></p>
+  <nav aria-label="Hauptnavigation">
+    <a href="#tools">Ausprobieren</a>
+    <a href="#ablauf">Ablauf</a>
+    <a href="#rechnung">Rechnung</a>
+    <a class="pill" href="#kontakt">Kontakt</a>
+  </nav>
+</header>
 
-    <section id="loesung">
-      <h2>Was wir bauen</h2>
-      <p class="section-intro">Kleine Tools, die zu Ihrem Alltag passen. Sie laufen im Browser und lassen sich auf Tablet, Handy oder Display installieren. Zugriff haben nur die Leute aus Ihrem Betrieb.</p>
-      <div class="cards">
-        <article class="card"><h3>Reservationen</h3><p>Anfragen sammeln, Tische zuteilen, Gäste automatisch bestätigen.</p></article>
-        <article class="card"><h3>Dienstplan</h3><p>Schichten planen, Wünsche sammeln, alle sehen den aktuellen Stand.</p></article>
-        <article class="card"><h3>Bestellungen &amp; Einkauf</h3><p>Vorräte im Blick, Bestellungen an Lieferanten schneller erledigt.</p></article>
-        <article class="card"><h3>Speisekarte</h3><p>Tagesmenü und Allergene selbst ändern, überall gleich aktuell.</p></article>
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="kicker">Für Restaurants, Cafés und Bars in der Schweiz</p>
+      <h1>Der Service läuft.<br><em>Der Papierkram</em> nicht.</h1>
+      <p class="lede">Wir stellen uns einen Tag in Ihren Betrieb, schauen zu und bauen danach genau das Tool, das Ihnen am meisten Zeit zurückgibt. Läuft im Browser. Gehört Ihnen.</p>
+      <p class="hero-cta"><a class="btn" href="#tools">Selbst ausprobieren</a> <a class="btn ghost" href="#kontakt">Gespräch anfragen</a></p>
+    </div>
+
+    <div class="rail-wrap" aria-hidden="true">
+      <div class="rail"></div>
+      <div class="tickets-hang">
+        <div class="ticket t1"><b>TISCH 4</b><span>19:12</span><hr><p>2× Rösti Spiegelei<br>1× Cordon bleu<br>1× Hauptsalat</p><i>OHNE ZWIEBELN</i></div>
+        <div class="ticket t2"><b>TISCH 9</b><span>19:15</span><hr><p>4× Tagessuppe<br>2× Geschnetzeltes<br>2× Wurstsalat</p></div>
+        <div class="ticket t3 done"><b>TISCH 2</b><span>19:04</span><hr><p>1× Panna cotta<br>2× Kaffee</p><em>ERLEDIGT</em></div>
       </div>
-      <p class="note">Beispiele. Was wir wirklich bauen, hängt davon ab, wo es bei Ihnen am meisten klemmt.</p>
-    </section>
+    </div>
+  </section>
 
-    <section id="ablauf" class="alt">
-      <h2>So läuft es ab</h2>
-      <ol class="steps">
-        <li><h3>Zuschauen</h3><p>Wir kommen vorbei und schauen uns Ihren Ablauf an. Kein langer Verkaufstermin.</p></li>
-        <li><h3>Bauen</h3><p>Wir entwickeln ein Tool für genau das Problem, das bei Ihnen am meisten Zeit kostet.</p></li>
-        <li><h3>Übergeben</h3><p>Sie bekommen das fertige Produkt samt Lizenz und eine kurze Einführung für Ihr Team.</p></li>
-      </ol>
-    </section>
+  <!-- INTRO / PROBLEM -->
+  <section class="problem">
+    <p class="big">Zettel auf dem Pass. Dienstplan im WhatsApp-Chat. Reservationen auf dem Block neben der Kasse.</p>
+    <p class="small">Das funktioniert, solange niemand krank wird. Wir bauen kleine Tools, die genau diese Stellen ersetzen. Keine Plattform, kein Konto bei uns, keine 40 Funktionen, die niemand braucht.</p>
+  </section>
 
-    <section id="modell">
-      <h2>Einmal kaufen, selbst betreiben</h2>
-      <ul class="checks">
-        <li><strong>Einmalige Zahlung.</strong> Kein Pflicht-Abo.</li>
-        <li><strong>Lizenz inklusive.</strong> Das Produkt gehört zu Ihrem Betrieb.</li>
-        <li><strong>Server und Domain bei Ihnen.</strong> Die laufenden Kosten zahlen Sie direkt beim Anbieter. Das sagen wir von Anfang an offen.</li>
-        <li><strong>Änderungen auf Anfrage.</strong> Im begrenzten Rahmen, je nach unserer Verfügbarkeit.</li>
-      </ul>
-    </section>
+  <!-- LIVE TOOLS -->
+  <section id="tools" class="tools">
+    <header class="sec-head">
+      <p class="kicker">Keine Bilder, echte Tools</p>
+      <h2>Probieren Sie es aus.</h2>
+      <p>So fühlen sich die Tools an, die wir bauen. Alles hier funktioniert wirklich. Ihre Eingaben bleiben im Browser und gehen nirgends hin.</p>
+    </header>
 
-    <section id="kontakt" class="alt">
-      <h2>Lassen Sie uns reden</h2>
-      <p class="section-intro">Schreiben Sie uns kurz, was in Ihrem Betrieb am meisten Zeit frisst. Wir melden uns.</p>
-      <p><a class="btn" href="mailto:kontakt@example.ch">kontakt@example.ch</a></p>
-      <p class="note">Platzhalter-Adresse, bitte durch die echte ersetzen.</p>
-    </section>
-  </main>
+    <!-- 1. BONRAIL -->
+    <article class="tool" id="tool-bon" aria-labelledby="h-bon">
+      <header class="tool-head">
+        <span class="no">01</span>
+        <div><h3 id="h-bon">Bon-Schiene</h3><p>Bestellung aufnehmen, Küche sieht sie sofort, fertig tippen.</p></div>
+        <button class="link" id="bonReset" type="button">Zurücksetzen</button>
+      </header>
 
-  <footer class="site-footer">
-    <p>© <span id="year">2026</span> Silvan &amp; Timo · Schweiz</p>
-  </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+      <div class="bon-grid">
+        <div class="ticket-card draft">
+          <h4>Neue Bestellung</h4>
+          <label class="field-inline">Tisch
+            <select id="bonTable" aria-label="Tisch wählen"></select>
+          </label>
+          <div class="menu" id="bonMenu" role="group" aria-label="Speisekarte"></div>
+          <div class="draft-lines" id="bonDraft" aria-live="polite"></div>
+          <button class="btn full" id="bonSend" type="button" disabled>An Küche senden</button>
+        </div>
+
+        <div class="pass">
+          <div class="pass-head">
+            <h4>Küche</h4>
+            <p class="stats"><span>Offen <b id="statOpen">0</b></span><span>Erledigt <b id="statDone">0</b></span><span>Ø Dauer <b id="statAvg">–</b></span></p>
+          </div>
+          <div class="rail small-rail"></div>
+          <ol class="kitchen" id="bonKitchen" aria-live="polite"></ol>
+          <p class="empty" id="bonEmpty" hidden>Alles raus. Durchatmen.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2. RESERVATION -->
+    <article class="tool" id="tool-res" aria-labelledby="h-res">
+      <header class="tool-head">
+        <span class="no">02</span>
+        <div><h3 id="h-res">Reservation</h3><p>Gast wählt, der passende Tisch wird automatisch vergeben.</p></div>
+        <button class="link" id="resReset" type="button">Zurücksetzen</button>
+      </header>
+
+      <div class="res-grid">
+        <form class="ticket-card" id="resForm" novalidate>
+          <h4>Tisch anfragen</h4>
+          <fieldset class="chips" id="resDays"><legend>Tag</legend></fieldset>
+          <div class="stepper"><span id="paxLabel">Personen</span>
+            <button type="button" id="paxMinus" aria-label="Eine Person weniger">−</button>
+            <output id="paxOut" aria-labelledby="paxLabel">2</output>
+            <button type="button" id="paxPlus" aria-label="Eine Person mehr">+</button>
+          </div>
+          <fieldset class="chips slots" id="resSlots"><legend>Zeit</legend></fieldset>
+          <label class="field">Name<input id="resName" type="text" autocomplete="off" placeholder="z. B. Familie Keller"></label>
+          <p class="form-msg" id="resMsg" role="status" aria-live="polite"></p>
+          <button class="btn full" type="submit">Reservieren</button>
+        </form>
+
+        <div class="floor">
+          <h4>Saalplan <span id="floorLabel"></span></h4>
+          <div class="tables" id="resTables"></div>
+          <div class="sms" id="resSms" hidden>
+            <p class="sms-label">Nachricht an den Gast</p>
+            <p class="sms-bubble" id="resSmsText"></p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3. DIENSTPLAN -->
+    <article class="tool" id="tool-plan" aria-labelledby="h-plan">
+      <header class="tool-head">
+        <span class="no">03</span>
+        <div><h3 id="h-plan">Dienstplan</h3><p>Zelle antippen, Schicht wechselt. Der Plan prüft mit.</p></div>
+        <button class="link" id="planReset" type="button">Zurücksetzen</button>
+      </header>
+
+      <div class="plan-wrap">
+        <div class="plan-scroll">
+          <table class="plan" id="plan">
+            <caption class="sr">Dienstplan Woche, Zeilen sind Personen, Spalten sind Tage</caption>
+          </table>
+        </div>
+        <ul class="legend" aria-label="Legende">
+          <li><b class="sh f">F</b> Früh 07–15</li>
+          <li><b class="sh t">T</b> Geteilt 10–14 und 17–22</li>
+          <li><b class="sh s">S</b> Spät 16–24</li>
+          <li><b class="sh free">–</b> Frei</li>
+        </ul>
+        <div class="alerts" id="planAlerts" aria-live="polite"></div>
+        <p class="fine">Demo mit Beispielregeln: Warnung bei weniger als 11 Stunden Ruhezeit zwischen zwei Diensten und bei Tagen ohne Besetzung. Keine Rechtsberatung.</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- ABLAUF -->
+  <section id="ablauf" class="steps-sec">
+    <header class="sec-head">
+      <p class="kicker">So läuft es ab</p>
+      <h2>Zuschauen. Bauen. Übergeben.</h2>
+    </header>
+    <ol class="steps">
+      <li class="ticket"><b>BON 1</b><span>Tag 1</span><hr>
+        <h3>Zuschauen</h3>
+        <p>Wir kommen zum Service, bleiben im Weg stehen und schauen, wo Zeit verloren geht. Fragen stellen wir erst danach.</p></li>
+      <li class="ticket"><b>BON 2</b><span>Woche 2–4</span><hr>
+        <h3>Bauen</h3>
+        <p>Wir bauen eine Web-App für genau dieses eine Problem. Sie sehen früh einen Stand und sagen uns, was nicht passt.</p></li>
+      <li class="ticket"><b>BON 3</b><span>Übergabe</span><hr>
+        <h3>Übergeben</h3>
+        <p>Sie erhalten die App mit Lizenz, installiert auf Tablet oder Display, und eine kurze Einführung für Ihr Team.</p></li>
+    </ol>
+  </section>
+
+  <!-- RECHNUNG -->
+  <section id="rechnung" class="bill-sec">
+    <header class="sec-head">
+      <p class="kicker">Das Modell</p>
+      <h2>Einmal bezahlen.<br>Selbst betreiben.</h2>
+      <p>Wir verkaufen Ihnen das Produkt, nicht ein Abo. Hier ist die Rechnung, wie sie aussehen soll.</p>
+    </header>
+
+    <div class="ticket receipt" role="group" aria-label="Beispielrechnung">
+      <b>RECHNUNG</b><span>Muster</span><hr>
+      <dl>
+        <div><dt>Web-App nach Mass</dt><dd>einmalig</dd></div>
+        <div><dt>Lizenz für Ihren Betrieb</dt><dd>inklusive</dd></div>
+        <div><dt>Einführung für Ihr Team</dt><dd>inklusive</dd></div>
+        <div><dt>Server und Domain</dt><dd>bei Ihnen</dd></div>
+        <div><dt>Änderungen danach</dt><dd>auf Anfrage</dd></div>
+        <div class="sum"><dt>Pflicht-Abo</dt><dd>CHF 0.00</dd></div>
+      </dl>
+      <hr>
+      <p class="stamp">KEIN ABO</p>
+      <p class="fine">Server, Domain und Hosting zahlen Sie direkt beim Anbieter Ihrer Wahl. Das sagen wir Ihnen von Anfang an. Änderungen machen wir im begrenzten Rahmen, je nach unserer Zeit.</p>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt" class="contact">
+    <header class="sec-head">
+      <p class="kicker">Kontakt</p>
+      <h2>Was kostet Sie am meisten Zeit?</h2>
+      <p>Schreiben Sie uns zwei Sätze. Wir melden uns und kommen gerne zum Service vorbei.</p>
+    </header>
+    <form class="ticket contact-form" id="contactForm">
+      <b>NEUER BON</b><span>an Silvan &amp; Timo</span><hr>
+      <label class="field">Betrieb<input name="betrieb" type="text" autocomplete="organization" required placeholder="Name Ihres Betriebs"></label>
+      <label class="field">Ihr Name<input name="name" type="text" autocomplete="name" required></label>
+      <label class="field">Was nervt im Alltag am meisten?<textarea name="problem" rows="4" placeholder="z. B. Dienstplan, Reservationen, Bestellungen, Einkauf"></textarea></label>
+      <button class="btn full" type="submit">E-Mail vorbereiten</button>
+      <p class="fine">Öffnet Ihr E-Mail-Programm mit dem fertigen Text. Es wird nichts automatisch gesendet. Oder direkt an <a href="mailto:kontakt@example.ch">kontakt@example.ch</a>.</p>
+    </form>
+  </section>
+</main>
+
+<footer class="foot">
+  <p class="mark small">Silvan<span>&amp;</span>Timo</p>
+  <p>Schweiz · Entwurf · Kontaktadresse und Impressum folgen</p>
+</footer>
+
+<script src="assets/app.js"></script>
 </body>
 </html>
