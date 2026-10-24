@@ -2,7 +2,7 @@
 
 Website von Silvan & Timo: Web-Apps für den Service in Gastronomiebetrieben in der Schweiz.
 
-Die Seite ist bewusst kein Vorlagen-Look. Sie ist aufgebaut wie eine Küche: Bons auf der Schiene, Rechnung als Kassenzettel. Die drei Tools im Abschnitt «Ausprobieren» funktionieren wirklich (Bon-Schiene, Reservation, Dienstplan).
+Die Seite stellt das Startup vor (Über uns, Haltung, Ablauf, Modell, Kontakt) und zeigt drei kleine, funktionierende Beispiel-Tools. Sie ist bewusst kein Vorlagen-Look: aufgebaut wie eine Küche, mit Bons auf der Schiene und der Rechnung als Kassenzettel.
 
 ## Lokal ansehen
 
@@ -26,3 +26,7 @@ Dann `http://localhost:8000` öffnen.
 - Demo-Eingaben bleiben im Browser (`localStorage`) und werden nirgends hingeschickt.
 - Das Kontaktformular öffnet das E-Mail-Programm (`mailto:`), es gibt kein Backend.
 - Platzhalter: Kontaktadresse `kontakt@example.ch`, Impressum, Preise.
+
+## Beispieltexte
+
+Texte, die noch zu euch passen müssen (Geschichte, Rollen, Kurzbeschreibungen, «Wo wir stehen»), sind im HTML mit `<mark class="ph">` markiert und auf der Seite gepunktet unterstrichen. Fotos: Platzhalter `.photo` in `index.html` durch ein `<img>` ersetzen.
