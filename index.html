@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Silvan &amp; Timo – Tools für den Service</title>
   <meta name="description" content="Wir schauen Ihrem Betrieb beim Arbeiten zu und bauen die Web-App, die den Ablauf einfacher macht. Einmal kaufen, selbst betreiben.">
-  <meta name="theme-color" content="#16181a">
-  <link rel="preload" href="assets/fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/styles.css">
+  <meta name="theme-color" content="#f6f5f0">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 
@@ -28,20 +27,18 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-copy">
-      <p class="kicker">Silvan &amp; Timo · Startup aus der Schweiz</p>
-      <h1>Wir bauen,<br><em>was der Service</em><br>braucht.</h1>
+      <p class="kicker">Startup aus der Schweiz</p>
+      <h1>Wir bauen, <em>was der Service braucht.</em></h1>
       <p class="lede">Wir sind Silvan und Timo. Wir gehen in Restaurants, Cafés und Bars, schauen zu, wie dort gearbeitet wird, und bauen Web-Apps, die den Alltag einfacher machen.</p>
       <p class="hero-cta"><a class="btn" href="#ueber-uns">Uns kennenlernen</a> <a class="btn ghost" href="#kontakt">Gespräch anfragen</a></p>
     </div>
 
-    <div class="rail-wrap" aria-hidden="true">
-      <div class="rail"></div>
-      <div class="tickets-hang">
-        <div class="ticket t1"><b>TISCH 4</b><span>19:12</span><hr><p>2× Rösti Spiegelei<br>1× Cordon bleu<br>1× Hauptsalat</p><i>OHNE ZWIEBELN</i></div>
-        <div class="ticket t2"><b>TISCH 9</b><span>19:15</span><hr><p>4× Tagessuppe<br>2× Geschnetzeltes<br>2× Wurstsalat</p></div>
-        <div class="ticket t3 done"><b>TISCH 2</b><span>19:04</span><hr><p>1× Panna cotta<br>2× Kaffee</p><em>ERLEDIGT</em></div>
-      </div>
-    </div>
+    <dl class="hero-meta">
+      <div><dt>Wer</dt><dd>Silvan und Timo</dd></div>
+      <div><dt>Für wen</dt><dd>Restaurants, Cafés, Bars</dd></div>
+      <div><dt>Was</dt><dd>Web-Apps für den Alltag im Betrieb</dd></div>
+      <div><dt>Wo</dt><dd>Schweiz</dd></div>
+    </dl>
   </section>
 
   <!-- INTRO / PROBLEM -->
@@ -95,13 +92,13 @@
       <h2>Zuschauen. Bauen. Übergeben.</h2>
     </header>
     <ol class="steps">
-      <li class="ticket"><b>BON 1</b><span>Tag 1</span><hr>
+      <li class="ticket"><b>Schritt 1</b><span>Tag 1</span><hr>
         <h3>Zuschauen</h3>
         <p>Wir kommen zum Service, bleiben im Weg stehen und schauen, wo Zeit verloren geht. Fragen stellen wir erst danach.</p></li>
-      <li class="ticket"><b>BON 2</b><span>Woche 2–4</span><hr>
+      <li class="ticket"><b>Schritt 2</b><span>Woche 2–4</span><hr>
         <h3>Bauen</h3>
         <p>Wir bauen eine Web-App für genau dieses eine Problem. Sie sehen früh einen Stand und sagen uns, was nicht passt.</p></li>
-      <li class="ticket"><b>BON 3</b><span>Übergabe</span><hr>
+      <li class="ticket"><b>Schritt 3</b><span>Übergabe</span><hr>
         <h3>Übergeben</h3>
         <p>Sie erhalten die App mit Lizenz, installiert auf Tablet oder Display, und eine kurze Einführung für Ihr Team.</p></li>
     </ol>
@@ -139,7 +136,6 @@
             <h4>Küche</h4>
             <p class="stats"><span>Offen <b id="statOpen">0</b></span><span>Erledigt <b id="statDone">0</b></span><span>Ø Dauer <b id="statAvg">–</b></span></p>
           </div>
-          <div class="rail small-rail"></div>
           <ol class="kitchen" id="bonKitchen" aria-live="polite"></ol>
           <p class="empty" id="bonEmpty" hidden>Alles raus. Durchatmen.</p>
         </div>
@@ -249,7 +245,7 @@
       <p>Schreiben Sie uns zwei Sätze. Wir melden uns und kommen gerne zum Service vorbei.</p>
     </header>
     <form class="ticket contact-form" id="contactForm">
-      <b>NEUER BON</b><span>an Silvan &amp; Timo</span><hr>
+      <b>Nachricht</b><span>an Silvan &amp; Timo</span><hr>
       <label class="field">Betrieb<input name="betrieb" type="text" autocomplete="organization" required placeholder="Name Ihres Betriebs"></label>
       <label class="field">Ihr Name<input name="name" type="text" autocomplete="name" required></label>
       <label class="field">Was nervt im Alltag am meisten?<textarea name="problem" rows="4" placeholder="z. B. Dienstplan, Reservationen, Bestellungen, Einkauf"></textarea></label>

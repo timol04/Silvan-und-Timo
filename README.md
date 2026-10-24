@@ -2,7 +2,7 @@
 
 Website von Silvan & Timo: Web-Apps für den Service in Gastronomiebetrieben in der Schweiz.
 
-Die Seite stellt das Startup vor (Über uns, Haltung, Ablauf, Modell, Kontakt) und zeigt drei kleine, funktionierende Beispiel-Tools. Sie ist bewusst kein Vorlagen-Look: aufgebaut wie eine Küche, mit Bons auf der Schiene und der Rechnung als Kassenzettel.
+Die Seite stellt das Startup vor (Über uns, Haltung, Ablauf, Modell, Kontakt) und zeigt drei kleine, funktionierende Beispiel-Tools. Der Look ist bewusst ruhig und schlicht: helles Papier, schwarze Schrift, feine Linien, grosse Typografie, keine Verläufe und keine Effekte.
 
 ## Lokal ansehen
 
@@ -19,7 +19,7 @@ Dann `http://localhost:8000` öffnen.
 - `index.html`: Inhalt und Texte
 - `assets/styles.css`: Gestaltung (Farben oben unter `:root`)
 - `assets/app.js`: die drei Demo-Tools, Uhr im Kopf, Kontaktformular
-- `assets/fonts/`: Schriften (Big Shoulders Display, IBM Plex Mono, Hanken Grotesk) mit Lizenzen, alle SIL OFL. Liegen im Repo, damit keine Daten an Google o. ä. gehen.
+- `assets/fonts/`: Schriften (Hanken Grotesk, IBM Plex Mono) mit Lizenzen, alle SIL OFL. Liegen im Repo, damit keine Daten an Google o. ä. gehen.
 
 ## Hinweise
 
